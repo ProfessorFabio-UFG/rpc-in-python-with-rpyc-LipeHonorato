@@ -10,10 +10,13 @@ class Client:
   print (conn.root.exposed_value())   # Print the result
   print(f"Soma dos valores da lista: {conn.root.exposed_accumulator()}") # Print the sum of the values in the list value
 
+  # generate 2 random numbers
   a = random.randint(0,100)
   b = random.randint(0,100)
 
+  # Show the sum of the two random numbers generated
   print(f"Soma de {a} e {b}: {conn.root.exposed_sum(a, b)}")
 
+  # Roll a dice and print the result
   print("Rolling the dice...")
   print(f"The dice roll was {conn.root.exposed_loadedDice()}")
