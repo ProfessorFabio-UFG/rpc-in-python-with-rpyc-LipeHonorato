@@ -15,7 +15,7 @@ class Client:
   b = random.randint(0,100)
 
   # Show the sum of the two random numbers generated
-  print(f"Soma de {a} e {b}: {conn.root.exposed_sum(a, b)}")
+  print(f"Sum from {a} and {b}: {conn.root.exposed_sum(a, b)}")
 
   # Roll a dice and print the result
   print("Rolling the dice...")
